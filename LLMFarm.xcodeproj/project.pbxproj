@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -77,6 +77,7 @@
 		15F210962A1920AA0021F414 /* AIChatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F210922A1920AA0021F414 /* AIChatModel.swift */; };
 		15F210AA2A1A659B0021F414 /* FileHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F210A92A1A659B0021F414 /* FileHelper.swift */; };
 		15FB67422B1BDB0800174379 /* ExportLoraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FB67412B1BDB0800174379 /* ExportLoraView.swift */; };
+		53B1A5AB2BD3381100585C4B /* llmfarm_core in Frameworks */ = {isa = PBXBuildFile; productRef = 53B1A5AA2BD3381100585C4B /* llmfarm_core */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -240,6 +241,7 @@
 				15A3EDD82A223CB00030AF5A /* Accelerate.framework in Frameworks */,
 				15B9D7422A4B55EA00276782 /* MetalPerformanceShaders.framework in Frameworks */,
 				15B9D7432A4B55EA00276782 /* Metal.framework in Frameworks */,
+				53B1A5AB2BD3381100585C4B /* llmfarm_core in Frameworks */,
 				15B9D7442A4B55EA00276782 /* MetalKit.framework in Frameworks */,
 				15A3EDDA2A223CDB0030AF5A /* llmfarm_core in Frameworks */,
 			);
@@ -515,6 +517,7 @@
 			name = LLMFarm;
 			packageProductDependencies = (
 				15A3EDD92A223CDB0030AF5A /* llmfarm_core */,
+				53B1A5AA2BD3381100585C4B /* llmfarm_core */,
 			);
 			productName = LLMFarm;
 			productReference = 15F2107E2A191B190021F414 /* LLMFarm.app */;
@@ -554,6 +557,7 @@
 			);
 			mainGroup = E624E1F52958ECC800996CD1;
 			packageReferences = (
+				53B1A5A92BD3381100585C4B /* XCLocalSwiftPackageReference "llmfarm_core.swift" */,
 			);
 			productRefGroup = E624E1FF2958ECC800996CD1 /* Products */;
 			projectDirPath = "";
@@ -778,7 +782,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 12;
 				DEVELOPMENT_ASSET_PATHS = "\"LLMFarm/Preview Content\"";
-				DEVELOPMENT_TEAM = C66ZA422A7;
+				DEVELOPMENT_TEAM = 898UAVNT2V;
 				ENABLE_HARDENED_RUNTIME = YES;
 				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
 				ENABLE_PREVIEWS = NO;
@@ -802,7 +806,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.guinmoon.LLMFarm;
+				PRODUCT_BUNDLE_IDENTIFIER = com.guinmoon.LLMFarm.cb;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = auto;
@@ -827,7 +831,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 12;
 				DEVELOPMENT_ASSET_PATHS = "\"LLMFarm/Preview Content\"";
-				DEVELOPMENT_TEAM = C66ZA422A7;
+				DEVELOPMENT_TEAM = 898UAVNT2V;
 				ENABLE_HARDENED_RUNTIME = YES;
 				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
 				ENABLE_PREVIEWS = NO;
@@ -851,7 +855,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.guinmoon.LLMFarm;
+				PRODUCT_BUNDLE_IDENTIFIER = com.guinmoon.LLMFarm.cb;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = auto;
@@ -1030,6 +1034,13 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCLocalSwiftPackageReference section */
+		53B1A5A92BD3381100585C4B /* XCLocalSwiftPackageReference "llmfarm_core.swift" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = llmfarm_core.swift;
+		};
+/* End XCLocalSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
 		1560D6142A237D4100918330 /* llmfarm_core */ = {
 			isa = XCSwiftPackageProductDependency;
@@ -1048,6 +1059,10 @@
 			productName = llmfarm_core;
 		};
 		15C08A632B9DF6F7000A1BE0 /* llmfarm_core */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = llmfarm_core;
+		};
+		53B1A5AA2BD3381100585C4B /* llmfarm_core */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = llmfarm_core;
 		};
